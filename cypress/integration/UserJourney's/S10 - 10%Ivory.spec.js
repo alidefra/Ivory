@@ -74,7 +74,7 @@ describe('S10 - 10%Ivory',function(){
         cy.get('#agree').check()
         cy.get("#agreeAndSubmit").click();
   
-  
+  //dhsy
   
       })
       })
