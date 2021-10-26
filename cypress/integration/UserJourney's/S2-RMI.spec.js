@@ -1,5 +1,5 @@
 describe('S2 - RMI',function(){
-    it('CompletlyCertain',function(){
+    it('S2 - RMI',function(){
         
         cy.visit('https://ivy-web-tst.azure.defra.cloud');
       cy.get('[type="radio"].govuk-radios__input').first().check()
