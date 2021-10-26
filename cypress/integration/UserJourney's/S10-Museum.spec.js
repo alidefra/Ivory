@@ -1,6 +1,6 @@
 
-describe('S10 - 10%Ivory',function(){
-    it('chooseLessthen10%Ivory',function(){
+describe('S10 - Museum',function(){
+    it('S10 - Museum',function(){
         
         cy.visit('https://ivy-web-tst.azure.defra.cloud');
         cy.get('[type="radio"].govuk-radios__input').first().check()
@@ -8,7 +8,7 @@ describe('S10 - 10%Ivory',function(){
         cy.wait(2000)
         //Item type //
         //cy.get('[type="radio"].govuk-radios__input').check("Musical instrument made before 1975 with less than 20% ivory")
-        cy.get('#whatTypeOfItemIsIt-2').check()
+        cy.get('#whatTypeOfItemIsIt-4').check()
         cy.get('button[id="continue"]').click()
         cy.wait(2000)
         // Can Continue //
@@ -36,19 +36,19 @@ describe('S10 - 10%Ivory',function(){
         cy.get("#continue").click();
 
   
-        //Ivory volume
-        cy.get('[type="radio"].govuk-radios__input').first().check()
-        cy.get("#continue").click();
+        // //Ivory volume
+        // cy.get('[type="radio"].govuk-radios__input').first().check()
+        // cy.get("#continue").click();
 
-        //Ivory Integral
-        cy.get('[type="radio"].govuk-radios__input').first().check()
-        cy.get("#continue").click();
+        // //Ivory Integral
+        // cy.get('[type="radio"].govuk-radios__input').first().check()
+        // cy.get("#continue").click();
        
-        //Ivory age
-        cy.get('input[type="checkbox"]').check()
-        cy.get("#continue").click();
-        cy.get('#otherReason').type('I have so many reasons');
-        cy.get("#continue").click();
+        // //Ivory age
+        // cy.get('input[type="checkbox"]').check()
+        // cy.get("#continue").click();
+        // cy.get('#otherReason').type('I have so many reasons');
+        // cy.get("#continue").click();
   
         //Who Owns the item
         cy.get('[type="radio"].govuk-radios__input').first().check()

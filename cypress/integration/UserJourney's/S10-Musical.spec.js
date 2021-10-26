@@ -1,6 +1,6 @@
 
 describe('S10 - MusicalInstrument',function(){
-  it('CompletlyCertain',function(){
+  it('S10 - MusicalInstrument',function(){
       
       cy.visit('https://ivy-web-tst.azure.defra.cloud');
       cy.get('[type="radio"].govuk-radios__input').first().check()
