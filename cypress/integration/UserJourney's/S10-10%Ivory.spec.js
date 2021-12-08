@@ -55,7 +55,7 @@ describe('S10 - 10%Ivory',function(){
         cy.get("#continue").click();
   
         //Contact details
-        cy.get('#name').type('Shaun Test');
+        cy.get('#fullName').type('Shaun Test');
         cy.get('#emailAddress').type('ali.akar@outlook.com');
         cy.get('#confirmEmailAddress').type('ali.akar@outlook.com');
         cy.get("#continue").click();
@@ -72,6 +72,7 @@ describe('S10 - 10%Ivory',function(){
       
         //CheckYourAnswers and Declaration//
         cy.get('#agree').check()
+        //cy.get('form input').check(['agree'])
         cy.get("#agreeAndSubmit").click();
   
   //dhsy

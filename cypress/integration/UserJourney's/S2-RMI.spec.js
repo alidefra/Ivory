@@ -68,7 +68,7 @@ cy.wait(2000)
       cy.get("#continue").click();
 
       //Contact details
-      cy.get('#name').type('Shaun Test');
+      cy.get('#fullName').type('Shaun Test');
       cy.get('#emailAddress').type('ali.akar@outlook.com');
       cy.get('#confirmEmailAddress').type('ali.akar@outlook.com');
       cy.get("#continue").click();
@@ -85,6 +85,7 @@ cy.wait(2000)
     
       //Declaration & submission//
       cy.get('#agree').check()
+      //cy.get('form input').check(['agree'])
       cy.get("#agreeAndSubmit").click();
 // comments///
     })
